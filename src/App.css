@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 50px;
+  background-color: rgb(55, 55, 109) ;
+  padding: 20px;
+  width: 1440px;
+  height: 400px;
+
+}
+
+.h1{
+  background-color: white;
+
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+ 
+
+}
+.inputpart{
+  padding: 10px;
+  background-color: rgb(98, 97, 168);
+}
+
+.inputpart {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  padding: 10px;
+  margin-right: 10px;
+}
+
+.addBtn {
+  padding: 10px 20px;
+  background-color: #0978c2;
   color: white;
+  border: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.addBtn:hover {
+  background-color: #471aec;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskList {
+  width: 300px;
+  border: 1px solid #204f57;
+  padding: 10px;
+  background-color:  rgb(98, 97, 168);
+
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+
+}
+
+.icon.position {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+i {
+  margin: 0 5px;
+}
+
+.inputpart button :hover{
+  curser:pointer;
+  background-color:#0978c2;
+}
+
+.taskList ul li span:hover{
+ background-color:#0978c2;
+ curser:pointer ;
+ 
+
+}
+
+.taskList ul li span{
+  padding: 7px 10px;
+}
+
+.taskList ul li span:nth-child(2):hover{
+  background-color:#0978c2;
+  color:white;
+  cursor:pointer;
+}
+.done {
+  text-decoration: line-through;
+}
+.footer{
+  background-color: darkgray;
 }
